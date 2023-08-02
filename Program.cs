@@ -20,3 +20,15 @@ class Program
             Console.WriteLine(item);
         }
     }
+     static string[] FilterArray(string[] array)
+    {
+        int count = 0;
+
+        // Подсчитываем количество строк, удовлетворяющих условию
+        foreach (string item in array)
+        {
+            if (item.Length <= 3)
+            {
+                count++;
+            }
+        }
