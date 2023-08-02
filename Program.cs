@@ -32,3 +32,20 @@ class Program
                 count++;
             }
         }
+// Создаем новый массив нужной длины
+        string[] result = new string[count];
+
+        // Заполняем новый массив
+        int index = 0;
+        foreach (string item in array)
+        {
+            if (item.Length <= 3)
+            {
+                result[index] = item;
+                index++;
+            }
+        }
+
+        return result;
+    }
+}
